@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+window.React = React
 import { ReactNode } from 'react';
 import styled from 'styled-components';
 
