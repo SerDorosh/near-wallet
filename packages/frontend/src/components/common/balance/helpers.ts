@@ -18,7 +18,7 @@ export const formatNearAmount = (amount) => {
     return formattedAmount;
 };
 
-export const showInYocto = (amountStr: string) => {
+export const showInYocto = (amountStr) => {
     return formatWithCommas(amountStr) + ' yoctoNEAR';
 };
 
