@@ -6,8 +6,8 @@ import { formatTokenAmount } from '../../../utils/amounts';
 const NEAR_FRACTIONAL_DIGITS = 5;
 export const YOCTO_NEAR_THRESHOLD = new BN('10', 10).pow(new BN(utils.format.NEAR_NOMINATION_EXP - NEAR_FRACTIONAL_DIGITS + 1, 10));
 
-export const formatNearAmount = (amount: string | number) => {
-    amount = amount.toString();
+export const formatNearAmount = (amount: string) => {
+    amount = amount
     if (amount === '0') {
         return amount;
     }
